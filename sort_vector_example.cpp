@@ -31,10 +31,10 @@ int main()
 	
 	std::vector<TwoValues*>::const_iterator i;
 	for (i = v.begin(); i != v.end(); ++i)
-		cout << "a: " << (*i)->a << "b:" << (*i)->b << endl;
+		cout << "a:" << (*i)->a << " b:" << (*i)->b << endl;
 	
 	sort(v.begin(), v.end(), compTwoValues);
 	cout << "Nach der Sortierung" << endl;
 	for (i = v.begin(); i != v.end(); ++i)
-		cout << "a: " << (*i)->a << "b:" << (*i)->b << endl;
+		cout << "a:" << (*i)->a << " b:" << (*i)->b << endl;
 }
