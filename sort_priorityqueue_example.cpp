@@ -27,11 +27,12 @@ int main()
 	TwoValues* t1 = new TwoValues;
 	t1->a = 4;
 	t1->b = 9;	
-	queue.push(t1);
 	
 	TwoValues* t2 = new TwoValues;
 	t2->a = 4;
 	t2->b = 1;
+	
+	queue.push(t1);
 	queue.push(t2);
 	
 	while(!queue.empty())
