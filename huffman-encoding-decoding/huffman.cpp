@@ -6,10 +6,21 @@ Huffman::Huffman()
 	m_decodedText = "";
 }
 
+Huffman::~Huffman()
+{
+	for(Node* n : m_nodesList)
+	{
+	   	if(n  != NULL)
+			delete n;
+	}	
+}
+
 // Erstelle einen Knoten mit Buchstabe, Vorkommen (Frequenz) und seinen Kindern (rechts + links)
 Node* Huffman::createNode(char ch, int freq, Node* left /* = NULL*/, Node* right /* = NULL*/)
 {
 	Node* node = new Node();
+	
+	m_nodesList.push_back(node); // um sie später aufzuräumen, s. Destruktor
 
 	node->ch = ch;
 	node->freq = freq;
