@@ -5,6 +5,7 @@
 #include <queue>
 #include <unordered_map>
 #include <string>
+#include <vector>
 
 using namespace std;
 
@@ -39,9 +40,11 @@ class Huffman
 		string m_encodedText;
 		string m_decodedText;
 		Node* m_root;
+		vector<Node*> m_nodesList;
 
 	public:
 		Huffman();
+		~Huffman();
 		string encodeText(string);
 		string decodeText(string);
 		
