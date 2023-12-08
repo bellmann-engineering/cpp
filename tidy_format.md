@@ -60,3 +60,18 @@
    Replace `your_file.cpp` with the actual name of your C++ source file.
 
    The `-i` option modifies the file in place.
+
+
+# Comparison
+
+| Feature                   | `clang-tidy`                                        | `clang-format`                                    |
+|---------------------------|-----------------------------------------------------|--------------------------------------------------|
+| **Purpose**               | Code analysis and suggestions                      | Code formatting                                  |
+| **Functionality**         | Analyzes code for potential issues, suggests fixes  | Automatically formats code based on a style      |
+| **Checks/Format Elements**| Wide range of checks (modernize, readability, etc.) | Indentation, spacing, line breaks, ordering of elements |
+| **Customization**         | Configurable through a configuration file          | Configurable through a `.clang-format` file or command line options |
+| **Usage**                 | Static code analysis, finding and fixing issues    | Enforcing consistent coding style, enhancing code readability |
+| **Integration**           | Can be integrated into build processes              | Often integrated into development workflows for automatic formatting |
+| **Examples of Checks/Formats** | Modernize, readability, performance, bug-related checks | Indentation, spacing, line breaks, ordering of `#include` directives |
+| **Common Use Cases**      | Bug finding and fixing, code improvement           | Codebase-wide formatting, ensuring coding style consistency |
+
