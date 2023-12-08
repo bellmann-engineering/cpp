@@ -1,8 +1,7 @@
 `clang-tidy` and `clang-format` are tools provided by the Clang project, which is a compiler front end for the C, C++, and Objective-C programming languages. These tools help improve code quality and maintain consistent coding styles.
 
-They are part of LLVM: https://github.com/llvm/llvm-project/releases/tag/llvmorg-17.0.1
-
-For Windows it is recommented to install this version: https://github.com/llvm/llvm-project/releases/download/llvmorg-17.0.1/LLVM-17.0.1-win64.exe
+- They are part of LLVM: https://github.com/llvm/llvm-project/releases/tag/llvmorg-17.0.1
+- For Windows it is recommented to install this version: https://github.com/llvm/llvm-project/releases/download/llvmorg-17.0.1/LLVM-17.0.1-win64.exe
 
 ### `clang-tidy`
 
