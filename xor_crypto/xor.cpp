@@ -18,18 +18,28 @@ vector<char> encryptDecrypt(vector<char> toEncrypt)
     return output;
 }
 
+string vectorToString(const vector<char>& vec)
+{
+    string result;
+    for (char c : vec)
+    {
+        result += c;
+    }
+    return result;
+}
+
 int main(int argc, const char * argv[])
 {
     string input = "Great Britain will Junkfood-Werbung im TV vor 21 Uhr verbieten.";
     vector<char> toEncrypt(input.begin(), input.end());
     
-    vector<char> str = encryptDecrypt(toEncrypt);
-    string encrypted(str.begin(), str.end());
-    cout << "Encrypted: " << str << "\n";
+    vector<char> encryptedVec = encryptDecrypt(toEncrypt);
+    string encrypted = vectorToString(encryptedVec);
+    cout << "Encrypted: " << encrypted << "\n";
     
-    str = encryptDecrypt(str);
-    string decrypted(str.begin(), str.end());
-    cout << "Decrypted: " << str << "\n";
+    vector<char> decryptedVec = encryptDecrypt(encryptedVec);
+    string decrypted = vectorToString(decryptedVec);
+    cout << "Decrypted: " << decrypted << "\n";
     
     return 0;
 }
